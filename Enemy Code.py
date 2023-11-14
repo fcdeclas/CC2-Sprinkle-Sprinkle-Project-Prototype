@@ -8,21 +8,21 @@ class slime (object):
     health = 20
     strength = 2
     defence = 2
-    loot = random.randint (0,2)
+    loot = random.randint (0,10)
 
 class goblin (object):
     name = "Goblin"
     health = 25
     strength = 5
     defence = 5
-    loot = random.randint(0,2)
+    loot = random.randint(0,10)
 
 class troll (object):
     name = "Troll"
     health = 50
     strength = 10
     defence = 3
-    loot = random.randint(0,2)
+    loot = random.randint(0,10)
 
 class dragon(object):
     name = "Dragon"
@@ -32,13 +32,13 @@ class dragon(object):
     
 def enemyselect(goblin,bat,troll):
     enemyList = [goblin,bat,troll]
-    chance = random.randint(0,2)
+    chance = random.randint(0,10)
     enemy = enemyList[chance]
     return enemy
 
 def loot():
     loot = ["potion", "sword", "shield"]
-    lootChance = random.randint(0,2)
+    lootChance = random.randint(0,5)
     lootDrop = loot[lootChance]
     return lootDrop
 
