@@ -195,12 +195,12 @@ def battlestate(score):
                         
 
                     elif enemy.name == "Goblin":
-                        enemy.health = 10
+                        enemy.health = 25
                         score = score + 5
                         
 
                     elif enemy.name == "Troll":
-                        enemy.health = 30
+                        enemy.health = 50
                         score = score + 15
                         
 
@@ -232,18 +232,18 @@ def battlestate(score):
                     gameOver(character, score)
 
                 else:
-                    if enemy.name == "Goblin":
+                    if enemy.name == "Slime":
                         enemy.health = 20
                         score = score + 10
                         
 
-                    elif enemy.name == "Bat":
-                        enemy.health = 10
+                    elif enemy.name == "Goblin":
+                        enemy.health = 25
                         score = score + 5
                         
 
                     elif enemy.name == "Troll":
-                        enemy.health = 30
+                        enemy.health = 50
                         score = score + 15
                         
 
