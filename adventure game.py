@@ -133,7 +133,7 @@ def heroselect():
         print("Only press 1, 2 or 3")
         heroselect()
 
-def enemyselect(goblin,bat,troll):
+def enemyselect(slime,goblin,troll):
     enemyList = [goblin,bat,troll]
     chance = random.randint(0,10)
     enemy = enemyList[chance]
@@ -189,12 +189,12 @@ def battlestate(score):
                     
 
                 else:
-                    if enemy.name == "Goblin":
+                    if enemy.name == "Slime":
                         enemy.health = 20
                         score = score + 10
                         
 
-                    elif enemy.name == "Bat":
+                    elif enemy.name == "Goblin":
                         enemy.health = 10
                         score = score + 5
                         
