@@ -141,7 +141,7 @@ def enemyselect(slime,goblin,troll):
 
 def loot():
     loot = ["potion", "sword", "shield"]
-    lootChance = random.randint(0,5)
+    lootChance = random.randint(0,2)
     lootDrop = loot[lootChance]
     return lootDrop
 
