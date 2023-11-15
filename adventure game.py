@@ -44,30 +44,30 @@ class hunter (object):
 
 # Enemy Classes
 
-class goblin (object):
-    name = "Goblin"
+class slime (object):
+    name = "Slime"
     health = 20
     strength = 2
     defence = 2
-    loot = random.randint(0,2)
+    loot = random.randint (0,10)
 
-class bat (object):
-    name = "Bat"
-    health = 10
-    strength = 1
-    defence = 3
-    loot = random.randint(0,2)
+class goblin (object):
+    name = "Goblin"
+    health = 25
+    strength = 5
+    defence = 5
+    loot = random.randint(0,10)
 
 class troll (object):
     name = "Troll"
-    health = 30
-    strength = 5
-    defence = 1.5
-    loot = random.randint(0,2)
+    health = 50
+    strength = 10
+    defence = 3
+    loot = random.randint(0,10)
 
-class boss(object):
-    name = "boss"
-    health = 150
+class dragon(object):
+    name = "Dragon"
+    health = 200
     strength = 50
     defence = 50
     
