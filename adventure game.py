@@ -135,13 +135,13 @@ def heroselect():
 
 def enemyselect(goblin,bat,troll):
     enemyList = [goblin,bat,troll]
-    chance = random.randint(0,2)
+    chance = random.randint(0,10)
     enemy = enemyList[chance]
     return enemy
 
 def loot():
     loot = ["potion", "sword", "shield"]
-    lootChance = random.randint(0,2)
+    lootChance = random.randint(0,5)
     lootDrop = loot[lootChance]
     return lootDrop
 
@@ -169,7 +169,7 @@ def lootEffect(lootDrop, character):
     
     
 def battlestate(score):
-    enemy = enemyselect(goblin,bat,troll)
+    enemy = enemyselect(slime,goblin,troll)
     print("a wild", enemy.name, "has appeared!")
     print ("you have 3 options...")
     while enemy.health > 0 :
