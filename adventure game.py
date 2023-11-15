@@ -134,7 +134,7 @@ def heroselect():
         heroselect()
 
 def enemyselect(slime,goblin,troll):
-    enemyList = [goblin,bat,troll]
+    enemyList = [goblin,slime,troll]
     chance = random.randint(0,10)
     enemy = enemyList[chance]
     return enemy
@@ -279,7 +279,7 @@ def battlestate(score):
             print ("number not allowed, please only type 1, 2 or 3...")
         
 
-def BossBattleState(score):
+def BossBattleState(score, boss):
     enemy = boss
     
 
