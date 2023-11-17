@@ -31,6 +31,9 @@ while option != 0:
         slow_type("........")
         slow_type(".......")
         EXTRA_slow_type("Woops it cant run sorry man")
+        print("")
+        print("")
+        input("Press Enter to Continue")
         os.system('cls')
 
         print()
@@ -49,6 +52,8 @@ while option != 0:
         option = int(input("Enter your option: "))
     else:
         slow_type("You hear a voice in your head saying 'READ THE INSTRUCTIONS' in a calm tone ")
+        print("")
+        print("")
         input("Press Enter to Continue")
         os.system('cls')
 
