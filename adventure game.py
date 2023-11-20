@@ -135,7 +135,7 @@ def heroselect():
 
 def enemyselect(slime,goblin,troll):
     enemyList = [goblin,slime,troll]
-    chance = random.randint(0,10)
+    chance = random.randint(0,2)
     enemy = enemyList[chance]
     return enemy
 
